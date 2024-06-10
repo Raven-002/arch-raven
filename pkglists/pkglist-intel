@@ -1,0 +1,6 @@
+intel-ucode
+mesa
+vulkan-intel
+intel-media-driver
+libva-intel-driver
+xf86-video-intel

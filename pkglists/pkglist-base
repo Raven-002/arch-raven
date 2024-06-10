@@ -21,3 +21,4 @@ posix
 grub
 efibootmgr
 sudo
+btrfs-progs

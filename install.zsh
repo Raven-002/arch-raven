@@ -25,6 +25,14 @@ yes_no_prompt "Install extra?" && cat "$INSTALLER_DIR/pkglis/pkglist-extra" >> "
 install_from_file "$tmp_package_list_path"
 yes_no_prompt "Start basic servieces?" && "$INSTALLER_DIR/start-services-base.zsh"
 
+if yes_no_prompt "Configure sudo for wheel group?"; then
+    if yes_no_prompt "Should wheel users enter a password when using sudo?"; then
+        sed -i 's/# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' "/etc/sudoers"
+    else
+        sed -i 's/# %wheel ALL=(ALL:ALL) NOPASSWD:ALL/%wheel ALL=(ALL:ALL) NOPASsWD:ALL/' "/etc/sudoers"
+    fi
+fi
+
 read_prompt "Main User[Empty to skip this]"
 if ! [ -z "$_prompt_result" ]; then
     user_name=$_prompt_result

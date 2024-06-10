@@ -20,3 +20,4 @@ pipewire-jack
 posix
 grub
 efibootmgr
+sudo

@@ -37,6 +37,8 @@ read_prompt "Main User[Empty to skip this]"
 if ! [ -z "$_prompt_result" ]; then
     user_name=$_prompt_result
     "$INSTALLER_DIR/add-main-user.zsh" $user_name
-    su $user_name -c "$INSTALLER_DIR/install/user-install.zsh"
+    cp -r "$INSTALLER_DIR" "/home/$username/.arch-config"
+    chown raven:raven -R "/home/$username/.arch-config"
+    su $user_name -c "/home/$username/.arch-confiR/install/user-install.zsh"
 fi
 

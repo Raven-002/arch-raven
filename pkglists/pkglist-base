@@ -22,3 +22,4 @@ grub
 efibootmgr
 sudo
 btrfs-progs
+openssh

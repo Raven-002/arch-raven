@@ -8,3 +8,4 @@ source "$INSTALLER_DIR/zsh-uils.zsh"
 # *** Script *********************************************
 systemctl enable --now bluetooth.service
 systemctl enable --now NetworkManager.service
+systemctl enable --now sshd.service

@@ -10,3 +10,4 @@ username="$1"
 ![ -z "$username" ]
 
 useradd --create-home --shell "/bin/zsh" --groups "wheel,nix-users" "$username"
+passwd "$username"

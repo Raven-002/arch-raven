@@ -3,13 +3,14 @@
 set -e
 
 INSTALLER_DIR="${0:a:h}"
-source "$INSTALLER_DIR/zsh-uils.zsh"
+source "$INSTALLER_DIR/zsh-utils.zsh"
 
 # *** Script *********************************************
 whoami | grep -q root && echo "ERROR: Running with root" && exit 2
 
 echo Enabling nix daemon
-sudo systemctl enable --now nix-daemon.service
+sudo -S systemctl enable nix-daemon.service
+sudo -S systemctl start nix-daemon.service
 
 echo Checking if user in group nix-users
 groups | grep -q nix-users

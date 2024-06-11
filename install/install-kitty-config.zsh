@@ -2,8 +2,9 @@
 
 set -e
 
-INSTALLER_DIR="${0:a:h}/../.."
-source "$INSTALLER_DIR/zsh-uils.zsh"
+INSTALLER_DIR="${0:a:h}/.."
+source "$INSTALLER_DIR/zsh-utils.zsh"
 
 # *** Script *********************************************
-ln -s "$INSTALLER_DIR/config/kitty" "~/.config/kitty"
+mkdir -p ~/.config
+ln -s "$INSTALLER_DIR/config/kitty" "$HOME/.config/kitty"

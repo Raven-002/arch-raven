@@ -9,6 +9,7 @@ source "$INSTALLER_DIR/zsh-utils.zsh"
 systemctl enable bluetooth.service
 systemctl enable NetworkManager.service
 systemctl enable sshd.service
+systemctl enable sddm.service
 
 systemctl start bluetooth.service || true
 systemctl start NetworkManager.service || true

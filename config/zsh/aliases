@@ -1,5 +1,3 @@
-#!/bin/zsh
-
 # sudo aliases
 alias sudo='sudo '
 alias __='sudo -E '
@@ -24,3 +22,6 @@ alias :e='nvim '
 # pacman aliases
 alias pacman='pacman --color=always '
 alias yay='yay --color=always '
+
+# Shortcuts
+alias cl=clear

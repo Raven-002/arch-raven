@@ -136,7 +136,7 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
-DirSelectDialog Size=820,584
+DirSelectDialog Size=847,430
 History Items[$e]=file:$HOME/Downloads,file:$HOME/.arch-config,file:$HOME/.arch-config/,file:$HOME/.arch-config/,file:$HOME/.arch-config/
 
 [General]

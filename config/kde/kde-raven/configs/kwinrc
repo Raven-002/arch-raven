@@ -25,7 +25,12 @@ InsertionPoint=1
 padding=4
 
 [Tiling][55dd1544-728f-5720-86fd-70d15d520dcf]
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5},{"width":0.5}]}
+tiles={"layoutDirection":"vertical","tiles":[]}
+
+[Windows]
+DelayFocusInterval=0
+FocusPolicy=FocusFollowsMouse
+FocusStealingPreventionLevel=3
 
 [Xwayland]
 Scale=2.25

@@ -18,11 +18,13 @@ poloniumEnabled=true
 slideEnabled=false
 
 [Script-polonium]
-EngineType=1
-InsertionPoint=1
+InsertionPoint=2
 
 [Tiling]
 padding=4
+
+[Tiling][09688295-682f-5ea4-a478-2999d1cf05f1]
+tiles={"layoutDirection":"horizontal","tiles":[]}
 
 [Tiling][55dd1544-728f-5720-86fd-70d15d520dcf]
 tiles={"layoutDirection":"vertical","tiles":[]}

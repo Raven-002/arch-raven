@@ -1,3 +1,4 @@
+
 @define-color window_bg_color #1b1b1b;
 @define-color window_fg_color #e7e7e7;
 
@@ -103,4 +104,3 @@
 @define-color dark_2 #b6b6b6;
 @define-color dark_3 #dadada;
 @define-color dark_4 #ffffff;
-@import 'colors.css';

@@ -25,26 +25,9 @@ activityId=
 formfactor=2
 immutability=1
 lastScreen=0
-location=4
+location=3
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
-
-[Containments][2][Applets][21]
-immutability=1
-plugin=org.kde.plasma.digitalclock
-
-[Containments][2][Applets][21][Configuration]
-PreloadWeight=70
-popupHeight=450
-popupWidth=810
-
-[Containments][2][Applets][21][Configuration][Appearance]
-enabledCalendarPlugins=pimevents,holidaysevents
-fontWeight=400
-
-[Containments][2][Applets][21][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
 
 [Containments][2][Applets][27]
 immutability=1
@@ -105,7 +88,7 @@ plugin=org.kde.plasma.kickoff
 [Containments][2][Applets][3][Configuration]
 PreloadWeight=100
 popupHeight=510
-popupWidth=646
+popupWidth=647
 
 [Containments][2][Applets][3][Configuration][General]
 favoritesPortedToKAstats=true
@@ -114,7 +97,7 @@ favoritesPortedToKAstats=true
 global=Alt+F1
 
 [Containments][2][Applets][3][Shortcuts]
-global=Alt+F1
+global=
 
 [Containments][2][Applets][30]
 immutability=1
@@ -129,24 +112,33 @@ desktopWrapOn=false
 highlightOnActive=true
 indicatorType=1
 
-[Containments][2][Applets][31]
-immutability=1
-plugin=org.kde.plasma.marginsseparator
-
-[Containments][2][Applets][31][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][2][Applets][5]
-immutability=1
-plugin=org.kde.plasma.icontasks
-
-[Containments][2][Applets][5][Configuration][General]
-launchers=applications:systemsettings.desktop,applications:org.kde.discover.desktop,applications:firefox.desktop
-
 [Containments][2][Applets][6]
 immutability=1
 plugin=org.kde.plasma.marginsseparator
+
+[Containments][2][Applets][65]
+immutability=1
+plugin=org.kde.plasma.digitalclock
+
+[Containments][2][Applets][65][Configuration]
+PreloadWeight=55
+popupHeight=450
+popupWidth=560
+
+[Containments][2][Applets][65][Configuration][Appearance]
+dateDisplayFormat=BesideTime
+
+[Containments][2][Applets][65][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][2][Applets][66]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][2][Applets][67]
+immutability=1
+plugin=org.kde.plasma.panelspacer
 
 [Containments][2][Applets][7]
 immutability=1
@@ -157,10 +149,11 @@ PreloadWeight=100
 SystrayContainmentId=8
 
 [Containments][2][General]
-AppletOrder=3;5;30;31;27;29;6;7;21
+AppletOrder=3;30;66;65;67;27;29;6;7
 
 [Containments][33]
 ItemGeometries-1707x960=
+ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
 activityId=571184df-1097-4c8f-b066-5ade112b9be0
 formfactor=0
@@ -175,7 +168,7 @@ activityId=
 formfactor=2
 immutability=1
 lastScreen=1
-location=4
+location=3
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
 
@@ -183,12 +176,16 @@ wallpaperplugin=org.kde.image
 immutability=1
 plugin=org.kde.plasma.kickoff
 
+[Containments][34][Applets][35][Configuration]
+PreloadWeight=100
+popupHeight=510
+popupWidth=647
+
+[Containments][34][Applets][35][Configuration][General]
+favoritesPortedToKAstats=true
+
 [Containments][34][Applets][35][Configuration][Shortcuts]
 global=Alt+F1
-
-[Containments][34][Applets][37]
-immutability=1
-plugin=org.kde.plasma.icontasks
 
 [Containments][34][Applets][38]
 immutability=1
@@ -199,19 +196,35 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][34][Applets][39][Configuration]
+PreloadWeight=60
 SystrayContainmentId=40
 
 [Containments][34][Applets][54]
 immutability=1
 plugin=org.kde.plasma.digitalclock
 
+[Containments][34][Applets][54][Configuration]
+popupHeight=400
+popupWidth=560
+
+[Containments][34][Applets][54][Configuration][Appearance]
+dateDisplayFormat=BesideTime
+
+[Containments][34][Applets][54][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
 [Containments][34][Applets][60]
 immutability=1
 plugin=org.kde.plasma.plasm6desktopindicator
 
-[Containments][34][Applets][61]
-immutability=1
-plugin=org.kde.plasma.marginsseparator
+[Containments][34][Applets][60][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][34][Applets][60][Configuration][General]
+highlightOnActive=true
+indicatorType=1
 
 [Containments][34][Applets][62]
 immutability=1
@@ -219,7 +232,7 @@ plugin=org.kde.plasma.systemmonitor.cpu
 
 [Containments][34][Applets][62][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=55
+PreloadWeight=60
 popupHeight=234
 popupWidth=156
 
@@ -241,6 +254,9 @@ plugin=org.kde.plasma.systemmonitor.memory
 
 [Containments][34][Applets][63][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
+PreloadWeight=55
+popupHeight=211
+popupWidth=136
 
 [Containments][34][Applets][63][Configuration][Appearance]
 chartFace=org.kde.ksysguard.piechart
@@ -258,21 +274,38 @@ highPrioritySensorIds=["memory/physical/used"]
 lowPrioritySensorIds=["memory/physical/total"]
 totalSensors=["memory/physical/usedPercent"]
 
+[Containments][34][Applets][69]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][34][Applets][70]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
 [Containments][34][General]
-AppletOrder=35;37;60;61;62;63;38;39;54
+AppletOrder=35;60;70;54;69;62;63;38;39
 
 [Containments][40]
 activityId=
 formfactor=2
 immutability=1
-lastScreen=-1
-location=4
+lastScreen=1
+location=3
 plugin=org.kde.plasma.private.systemtray
+popupHeight=432
+popupWidth=432
 wallpaperplugin=org.kde.image
 
 [Containments][40][Applets][41]
 immutability=1
 plugin=optimus-gpu-switcher
+
+[Containments][40][Applets][41][Configuration]
+PreloadWeight=60
+
+[Containments][40][Applets][41][Configuration][General]
+cpuManufacturer=intel
+notificationToolPath=notify-send
 
 [Containments][40][Applets][42]
 immutability=1
@@ -281,6 +314,9 @@ plugin=org.kde.plasma.cameraindicator
 [Containments][40][Applets][43]
 immutability=1
 plugin=org.kde.plasma.clipboard
+
+[Containments][40][Applets][43][Configuration]
+PreloadWeight=60
 
 [Containments][40][Applets][44]
 immutability=1
@@ -329,17 +365,36 @@ plugin=org.kde.kdeconnect
 immutability=1
 plugin=org.kde.plasma.battery
 
+[Containments][40][Applets][56][Configuration]
+PreloadWeight=7
+
 [Containments][40][Applets][57]
 immutability=1
 plugin=org.kde.plasma.brightness
+
+[Containments][40][Applets][57][Configuration]
+PreloadWeight=7
 
 [Containments][40][Applets][58]
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
+[Containments][40][Applets][58][Configuration]
+PreloadWeight=65
+
 [Containments][40][Applets][59]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
+
+[Containments][40][Applets][59][Configuration]
+PreloadWeight=75
+
+[Containments][40][Applets][64]
+immutability=1
+plugin=org.kde.plasma.mediacontroller
+
+[Containments][40][Applets][64][Configuration]
+PreloadWeight=0
 
 [Containments][40][General]
 extraItems=optimus-gpu-switcher,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.kscreen,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.vault,org.kde.plasma.printmanager,org.kde.kdeconnect
@@ -350,7 +405,7 @@ activityId=
 formfactor=2
 immutability=1
 lastScreen=0
-location=4
+location=3
 plugin=org.kde.plasma.private.systemtray
 popupHeight=432
 popupWidth=432
@@ -359,6 +414,9 @@ wallpaperplugin=org.kde.image
 [Containments][8][Applets][10]
 immutability=1
 plugin=org.kde.plasma.clipboard
+
+[Containments][8][Applets][10][Configuration]
+PreloadWeight=55
 
 [Containments][8][Applets][11]
 immutability=1
@@ -428,14 +486,14 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][8][Applets][25][Configuration]
-PreloadWeight=51
+PreloadWeight=48
 
 [Containments][8][Applets][26]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][8][Applets][26][Configuration]
-PreloadWeight=65
+PreloadWeight=90
 
 [Containments][8][Applets][27]
 immutability=1
@@ -447,6 +505,10 @@ PreloadWeight=0
 [Containments][8][Applets][32]
 immutability=1
 plugin=optimus-gpu-switcher
+
+[Containments][8][Applets][32][Configuration][General]
+cpuManufacturer=intel
+notificationToolPath=notify-send
 
 [Containments][8][Applets][9]
 immutability=1

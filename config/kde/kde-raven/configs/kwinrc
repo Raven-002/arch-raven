@@ -14,20 +14,39 @@ Rows=1
 
 [Plugins]
 fadedesktopEnabled=true
-poloniumEnabled=true
+krohnkiteEnabled=false
+minimizeallEnabled=true
+poloniumEnabled=false
 slideEnabled=false
 
+[Script-krohnkite]
+enableBTreeLayout=true
+layoutPerActivity=false
+layoutPerDesktop=false
+screenGapBottom=8
+screenGapLeft=8
+screenGapRight=8
+screenGapTop=8
+tileLayoutGap=8
+
 [Script-polonium]
+Debug=true
 InsertionPoint=2
 
 [Tiling]
-padding=4
+padding=8
 
 [Tiling][09688295-682f-5ea4-a478-2999d1cf05f1]
-tiles={"layoutDirection":"horizontal","tiles":[]}
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5},{"width":0.5}]}
+
+[Tiling][194d0824-fdb0-5021-a695-53e34f1fa77e]
+tiles={"layoutDirection":"floating","tiles":[]}
+
+[Tiling][3beab9f4-4e29-5725-9adf-9ecd7e963693]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.4859375},{"layoutDirection":"vertical","tiles":[{"height":0.44166666666666665},{"height":0.5583333333333333}],"width":0.5140625}]}
 
 [Tiling][55dd1544-728f-5720-86fd-70d15d520dcf]
-tiles={"layoutDirection":"vertical","tiles":[]}
+tiles={"layoutDirection":"horizontal","tiles":[]}
 
 [Windows]
 DelayFocusInterval=0

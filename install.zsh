@@ -36,9 +36,13 @@ fi
 read_prompt "Main User[Empty to skip this]"
 if ! [ -z "$_prompt_result" ]; then
     user_name=$_prompt_result
+    read_prompt "dotfiles path[Empty='.dotfiles']"
+    [ -z "$_prompt_result" ] && export _prompt_result=".dotfiles"
+    dotfiles_location="/home/$user_name/$_prompt_result"
+
     "$INSTALLER_DIR/add-main-user.zsh" $user_name
-    cp -r "$INSTALLER_DIR" "/home/$user_name/.arch-config"
-    chown $user_name:$user_name -R "/home/$user_name/.arch-config"
-    su $user_name -c "/home/$user_name/.arch-config/install/user-install.zsh"
+    cp -r "$INSTALLER_DIR" "$dotfiles_location"
+    chown $user_name:$user_name -R "$dotfiles_location"
+    su $user_name -c "$dotfiles_location/install/user-install.zsh"
 fi
 

@@ -7,4 +7,4 @@ source "$INSTALLER_DIR/zsh-utils.zsh"
 
 # *** Script *********************************************
 mkdir -p ~/.config
-ln -sT "$INSTALLER_DIR/config/kitty" "$HOME/.config/kitty"
+ln -srT "$INSTALLER_DIR/config/kitty" "$HOME/.config/kitty"

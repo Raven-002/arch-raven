@@ -9,7 +9,7 @@ source "$INSTALLER_DIR/zsh-utils.zsh"
 whoami | grep -q root && echo "ERROR: Running with root" && exit 2
 
 mkdir -p ~/.config
-ln -sT "$INSTALLER_DIR/config/nixpkgs" "$HOME/.config/nixpkgs"
+ln -srT "$INSTALLER_DIR/config/nixpkgs" "$HOME/.config/nixpkgs"
 
 echo Enabling nix daemon
 sudo -S systemctl enable nix-daemon.service

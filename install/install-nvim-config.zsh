@@ -15,4 +15,4 @@ fi
 
 
 mkdir -p ~/.config
-ln -sfT "$INSTALLER_DIR/config/nvim" "$HOME/.config/nvim"
+ln -srfT "$INSTALLER_DIR/config/nvim" "$HOME/.config/nvim"

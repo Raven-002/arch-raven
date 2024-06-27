@@ -24,3 +24,4 @@ sudo
 btrfs-progs
 openssh
 timeshift
+xdg-user-dirs

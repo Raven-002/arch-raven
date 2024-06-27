@@ -11,5 +11,5 @@ if [ -z "$username" ]; then
     exit 2
 fi
 
-useradd --create-home --shell "/bin/zsh" --groups "wheel,nix-users" "$username"
+useradd --create-home --shell "/bin/zsh" --groups "wheel" "$username"
 passwd "$username"

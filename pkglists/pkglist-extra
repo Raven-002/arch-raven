@@ -3,11 +3,9 @@ posix-software-development
 posix-user-portability
 posix-xsi
 
+ripgrep
+
 kitty
-firefox
 samba
-gparted
 
-nix
-
-bash-language-server
+flatpak

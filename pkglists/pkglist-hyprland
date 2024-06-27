@@ -9,11 +9,12 @@ qt6-wayland
 waybar
 hyprpaper
 rofi-wayland
-hyprpicker
 hypridle
 hyprlock
 hyprcursor
-hyprcursor-dracula-kde-git
 cliphist
 iio-sensor-proxy
+
+hyprcursor-dracula-kde-git
+hyprpicker
 iio-hyprland-git

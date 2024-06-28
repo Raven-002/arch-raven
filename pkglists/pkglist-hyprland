@@ -18,6 +18,9 @@ xorg-xhost
 
 qt5ct
 qt6ct
+breeze
+breeze5
+breeze-gtk
 
 network-manager-applet
 blueman

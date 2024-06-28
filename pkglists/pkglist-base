@@ -17,6 +17,7 @@ sh
 bash
 libva-utils
 pipewire-jack
+pipewire-pulse
 posix
 grub
 efibootmgr

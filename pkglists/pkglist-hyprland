@@ -3,7 +3,7 @@ swaync
 pipewire
 wireplumber
 xdg-desktop-portal-hyprland
-polkit-kde-agent
+polkit-gnome
 qt5-wayland
 qt6-wayland
 waybar
@@ -14,9 +14,13 @@ hyprlock
 hyprcursor
 cliphist
 iio-sensor-proxy
+xorg-xhost
 
 qt5ct
 qt6ct
+
+network-manager-applet
+blueman
 
 hyprcursor-dracula-kde-git
 hyprpicker

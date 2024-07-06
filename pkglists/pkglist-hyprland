@@ -12,9 +12,15 @@ rofi-wayland
 hypridle
 hyprlock
 hyprcursor
+hyprwayland-scanner
 cliphist
 iio-sensor-proxy
 xorg-xhost
+
+cmake
+ninja
+cpio
+meson
 
 qt5ct
 qt6ct

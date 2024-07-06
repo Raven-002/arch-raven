@@ -25,6 +25,8 @@ breeze-gtk
 network-manager-applet
 blueman
 gnome-keyring
+libsecret
+seahorse
 
 hyprcursor-dracula-kde-git
 hyprpicker

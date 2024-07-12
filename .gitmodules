@@ -1,3 +1,9 @@
 [submodule "config/nvim"]
 	path = config/nvim
 	url = git@github.com:Raven-002/nvim.git
+[submodule "config/hypr/cursor-themes/config/hypr/cursor-themes/hyprcursor_dracula_kde"]
+	path = config/hypr/cursor-themes/config/hypr/cursor-themes/hyprcursor_dracula_kde
+	url = git@github.com:guillaumeboehm/hyprcursor_dracula_kde.git
+[submodule "config/hypr/cursor-themes/hyprcursor_dracula_kde"]
+	path = config/hypr/cursor-themes/hyprcursor_dracula_kde
+	url = git@github.com:guillaumeboehm/hyprcursor_dracula_kde.git

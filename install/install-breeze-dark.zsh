@@ -20,6 +20,13 @@ if yes_no_prompt "Configure qt breeze dark?"; then
     ln -srT "$INSTALLER_DIR/config/qt/qt6ct" "$HOME/.config/qt6ct"
 fi
 
+if yes_no_prompt "Install hyprcursor breeze dracula?"; then
+    mkdir -p "$HOME/.local/share/icons"
+    hyprcursor-util --create \
+        "$INSTALLER_DIR/config/hypr/cursor-themes/hyprcursor_dracula_kde" \
+        -o "$HOME/.local/share/icons"
+fi
+
 if yes_no_prompt "Configure flatpak (qt does not work well)?"; then
     flatpak override --user --filesystem=xdg-config/gtk-4.0:ro
     flatpak override --user --filesystem=xdg-config/gtk-3.0:ro

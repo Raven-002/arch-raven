@@ -4,6 +4,3 @@
 [submodule "config/hypr/cursor-themes/config/hypr/cursor-themes/hyprcursor_dracula_kde"]
 	path = config/hypr/cursor-themes/config/hypr/cursor-themes/hyprcursor_dracula_kde
 	url = git@github.com:guillaumeboehm/hyprcursor_dracula_kde.git
-[submodule "config/hypr/cursor-themes/hyprcursor_dracula_kde"]
-	path = config/hypr/cursor-themes/hyprcursor_dracula_kde
-	url = git@github.com:guillaumeboehm/hyprcursor_dracula_kde.git

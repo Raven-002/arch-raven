@@ -20,11 +20,19 @@ if yes_no_prompt "Configure qt breeze dark?"; then
     ln -srT "$INSTALLER_DIR/config/qt/qt6ct" "$HOME/.config/qt6ct"
 fi
 
-if yes_no_prompt "Install hyprcursor breeze dracula?"; then
+if yes_no_prompt "Install breeze dracula cursor?"; then
+    _TMP_THEME_DIR="/tmp/dracula-cursor-build.tmp"
     mkdir -p "$HOME/.local/share/icons"
-    hyprcursor-util --create \
-        "$INSTALLER_DIR/config/hypr/cursor-themes/hyprcursor_dracula_kde" \
-        -o "$HOME/.local/share/icons"
+    mkdir "$_TMP_THEME_DIR"
+
+    git clone git@github.com:dracula/gtk.git "$_TMP_THEME_DIR/dracula-gtk"
+    rm -rf "$HOME/.local/share/icons/Breeze-Dracula"
+    cp -r "$_TMP_THEME_DIR/dracula-gtk/kde/cursors/Dracula-cursors" "$HOME/.local/share/icons/Breeze-Dracula"
+
+    git clone https://github.com/guillaumeboehm/hyprcursor_dracula_kde.git "$_TMP_THEME_DIR/hyprcursor_dracula_kde"
+    hyprcursor-util --create "$_TMP_THEME_DIR/hyprcursor_dracula_kde" -o "$HOME/.local/share/icons"
+
+    rm -rf "$_TMP_THEME_DIR"
 fi
 
 if yes_no_prompt "Configure flatpak (qt does not work well)?"; then

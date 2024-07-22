@@ -22,6 +22,8 @@ ninja
 cpio
 meson
 
+inotify-tools
+
 qt5ct
 qt6ct
 breeze
